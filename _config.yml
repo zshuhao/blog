@@ -98,7 +98,5 @@ theme: icarus
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repository: https://github.com/Gudong1126/Gudong1126.github.io.git
-  branch: master
+  type: ''
 
