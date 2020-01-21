@@ -9,10 +9,11 @@ branches:
 script:
   - hexo cleanup
   - hexo generate # generate static files
-
+  - pwd
+  - ls
 deploy:
     provider: pages
-    # skip-cleanup: true
+    skip-cleanup: true
     github-token: $GH_TOKEN
     keep-history: true
     on:
