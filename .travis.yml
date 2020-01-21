@@ -7,14 +7,14 @@ branches:
   only:
     - master # build master branch only
 script:
+  - hexo cleanup
   - hexo generate # generate static files
+
 deploy:
     provider: pages
-    skip-cleanup: true
+    # skip-cleanup: true
     github-token: $GH_TOKEN
     keep-history: true
-    target-branch: gh-pages
-    verbose: true
     on:
       branch: master
-    local-dir: ./public/
+    local-dir: public
